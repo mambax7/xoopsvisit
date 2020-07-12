@@ -1,0 +1,21 @@
+/* Header & Navigation Style */
+#xo-recipe-header {
+  margin:           10px 0 10px 0;
+  border-bottom:    1px solid #5B380F;
+}
+#xo-recipe-header .name{
+  font:             bold 13px Verdana, Arial, Helvetica, sans-serif;
+}
+#xo-recipe-header .cat{
+  font:             normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+#xo-recipe-header .navDiv {
+  margin:           0 0 -15px 0;
+  text-align:       right;
+}
+#xo-recipe-header .navDiv input {
+  margin:           2px 0 2px 0;
+}
+#xo-recipe-header .navDiv select {
+  margin:           0 0 2px 0;
+}

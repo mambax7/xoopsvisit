@@ -1,0 +1,38 @@
+<{$block.link}>
+<table>
+  <tbody>
+    <{if $block.total_img}>
+    <tr>
+      <td class="bold"><{$block.total_lng}></td>
+      <td class="alignmiddle"><{$block.total_img}></td>
+    </tr>
+    <{/if}>
+  </tbody>
+</table>
+<{if $block.today_img || $block.user_img}>
+<fieldset class="outer">
+  <legend class="bold txtcenter" colspan="2"><{$block.today_lng}></legend>
+<table>
+  <tbody>
+    <{if $block.today_img}>
+    <tr>
+      <td class="small silver"><{$block.total_lng}></td>
+      <td class="alignmiddle"><{$block.today_img}></td>
+    </tr>
+    <{/if}>
+    <{if $block.user_img}>
+    <tr>
+      <td class="small silver"><{$block.user_lng}></td>
+      <td class="alignmiddle"><{$block.user_img}></td>
+    </tr>
+    <{/if}>
+  </tbody>
+</table>
+</fieldset>
+<{/if}>
+<{if $block.online_total}>
+<br />
+<div><{$block.online_total}></div>
+<div><{$block.lang_members}>: <{$block.online_members}></div>
+<div><{$block.lang_guests}>: <{$block.online_guests}></div>
+<{/if}>

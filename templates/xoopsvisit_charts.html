@@ -1,0 +1,24 @@
+<script type="text/javascript" src="<{$xoops_url}>/modules/xoopsvisit/swf/swfobject.js"></script>
+<div id="flashcontent">
+	<strong>You need to upgrade your Flash Player</strong>
+</div>
+<script type="text/javascript">
+	// <![CDATA[		
+	var so = new SWFObject("<{$chart_path}>/<{$chart_file}>", "<{$chart_id}>", "<{$chart_width}>", "<{$chart_height}>", "8", "#FFFFFF");
+	so.addVariable("path", "<{$chart_path}>/");
+	so.addVariable("settings_file", escape("<{$chart_settingfile}>"));
+  <{if $chart_datafile}>
+	so.addVariable("data_file", escape("<{$chart_datafile}>"));
+  <{/if}>
+  <{if $chart_data}>
+	so.addVariable("chart_data", "<{$chart_data}>");
+  so.addVariable("loading_data", "LOADING DATA");
+  <{/if}>
+  <{if $chart_setting}>
+	so.addVariable("chart_settings", "<{$chart_setting}>");
+  so.addVariable("loading_settings", "LOADING SETTINGS");
+  <{/if}>
+	so.addVariable("preloader_color", "#999999");
+	so.write("flashcontent");
+	// ]]>
+</script>

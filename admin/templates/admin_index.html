@@ -1,0 +1,25 @@
+<{$stylesheet}>
+<div class="tips"><{$smarty.const._XOOPSVISIT_MSG}></div>
+<table class="outer" cellspacing="1">
+  <thead>
+    <th colspan="2">Statistics</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="odd">
+        <ul>
+          <li><span class="bold"><{$smarty.const._XOOPSVISIT_TOTAL}></span>:&nbsp;<{$total}></li>
+          <li><span class="bold"><{$smarty.const._XOOPSVISIT_TOTALNROBOT}></span>:&nbsp;<{$total_nrobot}></li>
+          <li><span class="bold"><{$smarty.const._XOOPSVISIT_TODAY}></span>:&nbsp;<{$today}></li>
+          <li><span class="bold"><{$smarty.const._XOOPSVISIT_TODAYNROBOT}></span>:&nbsp;<{$today_nrobot}></li>
+          <li><span class="bold"><{$smarty.const._XOOPSVISIT_ROBOT}></span>:&nbsp;<{$robot}></li>
+        </ul>
+      </td>
+      <td class="even">
+        <div class="floatright"><{includeq file="db:xoopsvisit_charts.html"}></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="clear">&nbsp;</div>
